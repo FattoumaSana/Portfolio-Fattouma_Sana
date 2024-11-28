@@ -137,3 +137,24 @@ body.dark #realisations {
     background-color: #4C8A91; /* Couleur de fond au survol */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
 }
+
+.hide {
+    display: none !important;
+
+}
+
+@keyframes wave {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(1.05);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-bar {
+    animation: wave 2s infinite ease-in-out;
+}

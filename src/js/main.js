@@ -66,9 +66,9 @@ window.addEventListener('scroll', () => {
     // Vérifie si l'utilisateur a défilé plus de la moitié de la page
     if (window.scrollY > window.innerHeight / 2) {
         // Affiche le bouton en enlevant la classe "hidden"
-        scrollToTopButton.classList.remove('hidden');
+        scrollToTopButton.classList.remove('hide');
     } else {
         // Cache le bouton en rajoutant la classe "hidden"
-        scrollToTopButton.classList.add('hidden');
+        scrollToTopButton.classList.add('hide');
     }
 });
