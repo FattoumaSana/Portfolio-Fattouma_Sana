@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio Fattouma Sana</title>
+    <link href="../src/output.css" rel="stylesheet"> 
+    <link href="./src/styles.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+
+<!-- Section Header (Navbar) -->
+<header>
+    <nav class="bg-[#d5d5d5] text-[#2D3B4F] px-6 py-4 flex items-center justify-between shadow-lg dark:bg-gray-900 dark:text-white transition duration-300">
+        <!-- Logo -->
+        <div class="flex items-center space-x-4">
+            <!-- Logo clair ou sombre (classe dynamique selon le mode) -->
+            <img src="./img/logo-me.png" alt="Logo Clair" id="logo" class="h-24 w-24 rounded-full">
+        </div>
+        
+        <!-- Bouton hamburger -->
+        <button id="menu-toggle" class="block md:hidden focus:outline-none">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+        
+        <!-- Menu -->
+        <ul id="menu" class="hidden md:flex space-x-6 flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-[#F4F1EB] dark:bg-transparent md:bg-transparent p-4 md:p-0 z-10 transition duration-300">
+            <li><a href="#accueil" class="hover:text-teal-600 transition duration-300">Accueil</a></li>
+            <li><a href="#competences" class="hover:text-teal-600 transition duration-300">Compétences</a></li>
+            <li><a href="#portfolio" class="hover:text-teal-600 transition duration-300">Portfolio</a></li>
+            <li><a href="#contact" class="hover:text-teal-600 transition duration-300">Contact</a></li>
+        </ul>
+        
+
+        <!-- Bouton pour changer de thème avec icônes -->
+       <!-- Bouton pour changer de thème -->
+<button id="theme-toggle" class="bg-teal-600 text-white p-2 rounded-full focus:outline-none border-2 border-teal-600 transition duration-300 hover:bg-teal-700 hover:border-teal-700">
+    <div class="flex items-center">
+        <!-- Icône de lune (mode sombre) -->
+        <span id="moon-icon" class="block hidden">🌙</span>
+        <!-- Icône de soleil (mode clair) -->
+        <span id="sun-icon" class="hidden">🌞</span>
+    </div>
+</button>
+           
+    </nav>
+</header>
+
+
+
+   <!-- Section Héros -->
+   <section id="accueil" class="relative bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('./img/person-front-computer-working-html.jpg');">
+    <div class="text-center text-white bg-black bg-opacity-50 p-6 rounded-md">
+        <h2 class="text-4xl md:text-6xl font-bold">Ensemble, créons l'avenir du digital</h2>
+        <p class="mt-4 text-lg md:text-2xl">Développeur passionné, je mets mes compétences à votre service pour des projets innovants et performants. Prêt à relever tous les défis !</p>
+        <a href="#portfolio" class="mt-6 inline-block px-6 py-3 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition duration-300">
+            Découvrez mes réalisations
+        </a>        
+    </div>
+</section>
+
+<!-- Section Compétences -->
+<section id="competences" class="py-12 bg-white dark:bg-gray-900">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Mes Compétences</h2>
+        
+        <!-- Description ajoutée -->
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
+            Elles sont en constantes améliorations car pour moi, la joie de ce métier fait que l’on en apprend tous les jours, d’autant plus en étant impliqué, curieux et passionné.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Liste des compétences Back-End -->
+            <div class="space-y-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Back-End</h3>
+                
+                <div class="flex justify-between text-lg font-semibold">
+                    <span>PHP</span>
+                    <span class="text-teal-600">82%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                    <div class="bg-teal-600 h-2.5 rounded-full" style="width: 82%"></div>
+                </div>
+
+                <div class="flex justify-between text-lg font-semibold">
+                    <span>SQL</span>
+                    <span class="text-teal-600">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                    <div class="bg-teal-600 h-2.5 rounded-full" style="width: 80%"></div>
+                </div>
+
+                <div class="flex justify-between text-lg font-semibold">
+                    <span>Symfony</span>
+                    <span class="text-teal-600">63%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                    <div class="bg-teal-600 h-2.5 rounded-full" style="width: 63%"></div>
+                </div>
+            </div>
+
+            <!-- Liste des compétences Front-End -->
+            <div class="space-y-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Front-End</h3>
+                
+                <div class="flex justify-between text-lg font-semibold">
+                    <span>HTML</span>
+                    <span class="text-teal-600">95%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                    <div class="bg-teal-600 h-2.5 rounded-full" style="width: 95%"></div>
+                </div>
+
+                <div class="flex justify-between text-lg font-semibold">
+                    <span>CSS</span>
+                    <span class="text-teal-600">95%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                    <div class="bg-teal-600 h-2.5 rounded-full" style="width: 95%"></div>
+                </div>
+
+                <div class="flex justify-between text-lg font-semibold">
+                    <span>JavaScript</span>
+                    <span class="text-teal-600">15%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                    <div class="bg-teal-600 h-2.5 rounded-full" style="width: 15%"></div>
+                </div>
+            </div>
+
+            <!-- Liste des compétences CMS -->
+            <div class="space-y-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">CMS</h3>
+                
+                <div class="flex justify-between text-lg font-semibold">
+                    <span>WordPress</span>
+                    <span class="text-teal-600">95%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                    <div class="bg-teal-600 h-2.5 rounded-full" style="width: 95%"></div>
+                </div>
+
+                <div class="flex justify-between text-lg font-semibold">
+                    <span>PrestaShop</span>
+                    <span class="text-teal-600">55%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                    <div class="bg-teal-600 h-2.5 rounded-full" style="width: 55%"></div>
+                </div>
+            </div>
+
+            <!-- Liste des compétences Divers -->
+            <div class="space-y-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Divers</h3>
+                
+                <div class="flex justify-between text-lg font-semibold">
+                    <span>Windows</span>
+                    <span class="text-teal-600">95%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                    <div class="bg-teal-600 h-2.5 rounded-full" style="width: 95%"></div>
+                </div>
+
+                <div class="flex justify-between text-lg font-semibold">
+                    <span>Linux</span>
+                    <span class="text-teal-600">10%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                    <div class="bg-teal-600 h-2.5 rounded-full" style="width: 10%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CV Section -->
+        <div class="bg-cover bg-center p-8 rounded-lg shadow-lg mt-12" style="background-image: url('./img/cv-background.jpg');">
+            <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-white">Téléchargez mon CV</h3>
+                <a href="./path/to/your-cv.pdf" class="px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition duration-300">
+                    Télécharger CV
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+<!-- Section Mes Réalisations -->
+<section id="portfolio" class="py-12 bg-gray-100 dark:bg-gray-800">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Mes Réalisations</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Carte projet 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./img/projet-1.png" alt="Projet 1" class="w-full">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">Site vitrine (WordPress)</h3>
+                    <p class="mt-2 text-gray-600">Création d'un site vitrine pour une photographe locale, sur WordPress.</p>
+                </div>
+            </div>
+            <!-- Carte projet 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./img/projet-3.png" alt="Projet 2" class="w-full">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold"> Site Demo (Symfony)</h3>
+                    <p class="mt-2 text-gray-600">Reprise d'un site existant avec Symfony pour améliorer la performance et la sécurité.</p>
+                </div>
+            </div>
+            <!-- Carte projet 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./img/projet-4.png" alt="Projet 3" class="w-full">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">E-commerce (wordpress)</h3>
+                    <p class="mt-2 text-gray-600">Création d'une plateforme e-commerce sur wordpress, avec une interface utilisateur optimisée.</p>
+                </div>
+            </div>
+
+            <!-- Carte projet 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./img/projet-2.png" alt="Projet 4" class="w-full">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">Site Media Technologies</h3>
+                    <p class="mt-2 text-gray-600">Développement d'un site en html php css, avec un design minimaliste et responsive.</p>
+                </div>
+            </div>
+            <!-- Carte projet 5 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./img/projet-5.png" alt="Projet 5" class="w-full">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">Site wordpress </h3>
+                    <p class="mt-2 text-gray-600">Création d'un site web simple avec wordpress gérer des événements, avec Laravel comme framework back-end.</p>
+                </div>
+            </div>
+            <!-- Carte projet 6 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./img/projet-6.png" alt="Projet 6" class="w-full">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">Optimisation SEO</h3>
+                    <p class="mt-2 text-gray-600">Amélioration de la visibilité des sites clients sur les moteurs de recherche grâce à des stratégies de référencement efficaces et adaptées.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+     <!-- Section Contact -->
+<section id="contact" class="py-12 bg-gray-50 dark:bg-gray-900 transition duration-300">
+    <div class="container mx-auto">
+        <p class="text-xl font-medium mb-8 text-center text-gray-800 dark:text-gray-200">N'hésitez pas à me contacter, je serais ravi d'échanger avec vous !</p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            <!-- Formulaire de contact -->
+            <div class="col-span-2 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+                <form action="#" method="POST">
+                    <div class="mb-6">
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Nom</label>
+                        <input type="text" id="name" name="name" class="w-full mt-2 px-4 py-2 border rounded-lg text-gray-800 dark:text-gray-200 bg-gray-50 dark:bg-gray-700 focus:ring-2 focus:ring-teal-400 outline-none transition duration-300" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+                        <input type="email" id="email" name="email" class="w-full mt-2 px-4 py-2 border rounded-lg text-gray-800 dark:text-gray-200 bg-gray-50 dark:bg-gray-700 focus:ring-2 focus:ring-teal-400 outline-none transition duration-300" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full mt-2 px-4 py-2 border rounded-lg text-gray-800 dark:text-gray-200 bg-gray-50 dark:bg-gray-700 focus:ring-2 focus:ring-teal-400 outline-none transition duration-300" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-teal-600 text-white py-2 px-4 rounded-lg hover:bg-teal-500 transition duration-300">Envoyer</button>
+                </form>
+            </div>
+
+            <!-- Colonne réseaux sociaux -->
+            <div class="flex flex-col items-center space-y-6">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com" target="_blank" class="flex items-center justify-center w-16 h-16 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg shadow-md hover:shadow-lg transition duration-300 icon-hover">
+                    <i class="fab fa-linkedin text-3xl"></i>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/FattoumaSana" target="_blank" class="flex items-center justify-center w-16 h-16 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg shadow-md hover:shadow-lg transition duration-300 icon-hover">
+                    <i class="fab fa-github text-3xl"></i>
+                </a>
+                <!-- Gmail -->
+                <a href="mailto:fs.benissia@gmail.com" target="_blank" class="flex items-center justify-center w-16 h-16 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg shadow-md hover:shadow-lg transition duration-300 icon-hover">
+                    <i class="fas fa-envelope text-3xl"></i>
+                </a>
+                <!-- Téléphone -->
+                <a href="tel:+21652344796" class="flex items-center justify-center w-16 h-16 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg shadow-md hover:shadow-lg transition duration-300 icon-hover">
+                    <i class="fas fa-phone-alt text-3xl"></i>
+                </a>
+            </div>                     
+        </div>
+    </div>
+</section>
+
+<!-- Footer avec texte centré -->
+<footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+        <p>© 2024 Mon Portfolio Fattouma Sana. Tous droits réservés.</p>
+    </div>
+</footer>
+<!-- Bouton "Retour en haut" -->
+<button id="scroll-to-top" class="fixed bottom-6 right-6 p-4 bg-teal-600 text-white rounded-full shadow-lg hover:bg-teal-700 transition duration-300 transform hover:scale-105 focus:outline-none hidden">
+    <!-- Flèche vers le haut -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 15l-7-7-7 7"></path>
+    </svg>
+</button>
+
+    <script src="../src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+
+/* Mode sombre : même fond que les autres sections */
+body.dark #realisations {
+    background-color: #1F2937 !important; /* Gris foncé identique aux autres sections */
+}
+
+/* Applique l'animation de rotation aux icônes */
+.icon-hover {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-hover i {
+    transition: transform 0.5s ease-in-out; /* Rotation fluide */
+}
+
+/* Rotation de l'icône sur lui-même au survol */
+.icon-hover:hover i {
+    transform: rotate(360deg); /* Effectue une rotation complète de l'icône */
+}
+
+/* Option pour donner un effet de "zoom" léger au survol */
+.icon-hover:hover {
+    transform: scale(1.1); /* Agrandit légèrement le cadre au survol */
+}
+
+/* Conteneur global */
+#theme-toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #2d3b4f; /* Couleur de fond du bouton */
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Cercle (icône) */
+  #theme-toggle .toggle-circle {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  
+  /* Mode clair */
+  #theme-toggle.light {
+    background-color: #e5c07b; /* Couleur fond clair */
+  }
+  
+  #theme-toggle.light .toggle-circle {
+    transform: translateX(30px); /* Décalage du cercle pour le mode clair */
+  }
+  
+  /* Mode sombre */
+  #theme-toggle.dark {
+    background-color: #2d3b4f; /* Couleur fond sombre */
+  }
+  
+  #theme-toggle.dark .toggle-circle {
+    transform: translateX(0); /* Décalage du cercle pour le mode sombre */
+  }
+/* Conteneur global */
+#theme-toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #2d3b4f; /* Couleur de fond pour le mode sombre */
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cercle mobile (icône) */
+#theme-toggle .toggle-circle {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Positionnement des icônes */
+#theme-toggle #moon-icon, #theme-toggle #sun-icon {
+    font-size: 18px;
+}
+
+/* Lorsque le mode est clair (le cercle se déplace à droite) */
+#theme-toggle.active {
+    background-color: #E5C07B; /* Couleur de fond pour le mode clair */
+}
+
+#theme-toggle.active .toggle-circle {
+    transform: translateX(30px); /* Décalage du cercle pour mode clair */
+}
+  
+/* Style pour le bouton "Retour en haut" */
+#scroll-to-top {
+    position: fixed;  /* Pour que le bouton soit toujours en bas à droite */
+    bottom: 20px;     /* Distance du bas de la page */
+    right: 20px;      /* Distance de la droite de la page */
+    padding: 12px;    /* Taille du bouton */
+    background-color: #2D3748; /* Couleur de fond, similaire à l'exemple de ton div */
+    color: white;     /* Couleur de l'icône du bouton */
+    border-radius: 50%; /* Pour faire un bouton rond */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère autour du bouton */
+    display: flex;    /* Pour centrer l'icône */
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;  /* Taille de la flèche */
+    cursor: pointer;  /* Changer le curseur au survol */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+#scroll-to-top:hover {
+    background-color: #4C8A91; /* Couleur de fond au survol */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
